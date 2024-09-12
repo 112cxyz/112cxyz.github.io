@@ -125,11 +125,13 @@ body {
 }
 
 .section-container {
-    height: 140vh;  
+    height: 145vh;  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .section-container h2 {
