@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>112c</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navcontainer">
+            <h2>Toby Fox</h2>
+        </div>
+        <div class="navbar-links">
+            <a href="contact.html">Contact</a>  
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div style="white-space: nowrap;">
+                <div class="profilepic"></div>
+                <h1>Hi I'm <span class="typewriter-container"><span class="playwrite paralax-text">Toby! </span></span></h1> 
+                <h4>Full Time College Student</h2>
+                <div class="socials">
+                    <a href="https://github.com/112cxyz" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tobyjamesfox/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/tobythegreatish" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>  
+        </div>
+        <div class="content2">
+            <div class="section-container">
+                <h2>About Me</h2>
+                <div class="aboutme">
+                    <p>Hi! I'm Toby, a full time college student studying Digital Production Design & Development. I'm passionate about web development and I'm always looking for new projects to work on.</p>
+                    <br>
+                    <p> I'm currently learning React and I'm excited to see where it takes me. I'm also a huge fan of video games and I love to play them in my free time. I'm always looking for new people to connect with so feel free to reach out to me!</p>
+                </div>
+                <h2>My Projects</h2>
+                <div class="projects">
+                    <a href="https://github.com/112cxyz/Deskify" target="_blank">
+                        <div class="project">
+                            <div class="project-image">
+                                <img src="images/project1.png" alt="Project 1 Deskify: A Colourful Way To Show Music">
+                            </div>
+                            <div class="project-text">
+                                <h3>Deskify</h3>
+                                <p>A colourful way to show music!</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/112cxyz" target="_blank">
+                        <div class="project">
+                            <div class="project-image">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="project-text">
+                                <h3>...</h3>
+                                <p>Check out my github for more!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>Made with &lt;3 by © 2024 Toby Fox</p>
+        </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const playwrite = document.querySelector('.playwrite');
+            const text = playwrite.textContent;
+            playwrite.textContent = '';
+            let i = 0;
+            function typeWriter() {
+                if (i < text.length) {
+                    playwrite.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 150);
+                } else {
+
+                }
+            }
+            typeWriter();
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/59e2f04b4f.js" crossorigin="anonymous"></script>
+</body>
+</html>
